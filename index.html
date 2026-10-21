@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reserva tu Turno - Fernanda Estudio</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Script oficial de Tally para popups e embeds fluidos -->
+  <script src="https://tally.so/widgets/embed.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+  </style>
+</head>
+<body class="bg-rose-50/30 text-slate-800 antialiased min-h-screen flex flex-col justify-between">
+
+  <!-- Header / Navbar -->
+  <header class="max-w-4xl mx-auto w-full px-6 py-6 flex items-center justify-between">
+    <div class="flex items-center gap-2">
+      <div class="w-10 h-10 rounded-full bg-rose-500 text-white flex items-center justify-center font-bold text-lg shadow-md">FE</div>
+      <span class="font-semibold text-lg tracking-tight text-slate-900">Fernanda Estudio</span>
+    </div>
+    <a href="#tally-open=TU_FORM_ID" 
+       data-tally-open="TU_FORM_ID" 
+       data-tally-layout="modal" 
+       data-tally-width="500" 
+       class="bg-slate-900 text-white hover:bg-slate-800 px-4 py-2 rounded-xl text-sm font-medium transition shadow-sm">
+      Reservar Turno
+    </a>
+  </header>
+
+  <!-- Hero Section -->
+  <main class="max-w-4xl mx-auto px-6 py-8 w-full flex-grow">
+    <div class="text-center max-w-xl mx-auto mb-12">
+      <span class="text-rose-600 font-semibold text-xs tracking-wider uppercase bg-rose-100/60 px-3 py-1 rounded-full">Atención Personalizada</span>
+      <h1 class="text-3xl md:text-4xl font-bold mt-4 text-slate-900 tracking-tight">Reserva tu cita en segundos</h1>
+      <p class="text-slate-600 mt-3 text-sm md:text-base">Selecciona tu servicio favorito, consulta precios y elige el horario que mejor te convenga.</p>
+    </div>
+
+    <!-- Menú de Servicios (Cards de Alta Calidad UX) -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      
+      <!-- Card Servicio 1 -->
+      <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition flex justify-between items-center">
+        <div>
+          <h3 class="font-semibold text-slate-900">Extensiones Pelo a Pelo</h3>
+          <p class="text-xs text-slate-500 mt-1">Efecto natural y mirada descansada • 60 min</p>
+          <span class="inline-block text-rose-600 font-bold text-lg mt-2">$20.00</span>
+        </div>
+        <button data-tally-open="TU_FORM_ID" data-tally-layout="modal" class="bg-rose-50 text-rose-600 hover:bg-rose-100 px-3 py-2 rounded-lg text-xs font-semibold transition">
+          Agendar
+        </button>
+      </div>
+
+      <!-- Card Servicio 2 -->
+      <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition flex justify-between items-center">
+        <div>
+          <h3 class="font-semibold text-slate-900">Lash Lifting + Tinte</h3>
+          <p class="text-xs text-slate-500 mt-1">Realce de pestañas naturales • 45 min</p>
+          <span class="inline-block text-rose-600 font-bold text-lg mt-2">$15.00</span>
+        </div>
+        <button data-tally-open="TU_FORM_ID" data-tally-layout="modal" class="bg-rose-50 text-rose-600 hover:bg-rose-100 px-3 py-2 rounded-lg text-xs font-semibold transition">
+          Agendar
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Banner directo a la reserva -->
+    <div class="mt-10 bg-slate-900 text-white rounded-2xl p-6 text-center shadow-lg">
+      <h2 class="text-lg font-semibold">¿Lista para renovar tu mirada?</h2>
+      <p class="text-xs text-slate-300 mt-1">Haz clic abajo para abrir nuestro calendario interactivo.</p>
+      <button data-tally-open="TU_FORM_ID" data-tally-layout="modal" class="mt-4 bg-rose-500 hover:bg-rose-600 text-white px-6 py-2.5 rounded-xl text-sm font-semibold transition shadow-md">
+        Abrir Calendario de Reservas
+      </button>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 text-xs text-slate-400">
+    © Fernanda Estudio — Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>
